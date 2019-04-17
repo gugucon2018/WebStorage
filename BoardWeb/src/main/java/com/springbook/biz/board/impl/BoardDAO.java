@@ -9,7 +9,6 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 
 import com.springbook.biz.board.BoardVO;
-import com.springbook.biz.board.Boardservice;
 import com.springbook.biz.common.JDBCUtil;
 
 @Repository //이렇게 적으면 자동으로 컨트롤러에 등록이 된다

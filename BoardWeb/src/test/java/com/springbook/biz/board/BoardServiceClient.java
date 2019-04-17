@@ -10,7 +10,7 @@ public class BoardServiceClient {
 		AbstractApplicationContext container = 
 				new GenericXmlApplicationContext("applicationContext.xml");
 		
-		Boardservice service = (Boardservice)container.getBean("boardService");
+		BoardBoard service = (BoardBoard)container.getBean("boardService");
 		//Boardservice service2 =container.getBean(Boardservice.class); //방법이 두가지인것
 		
 		BoardVO vo = new BoardVO();

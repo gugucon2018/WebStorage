@@ -16,7 +16,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class BoardClient {
 
 	@Autowired
-	Boardservice service;
+	BoardBoard service;
 	
 	BoardVO vo;
 	

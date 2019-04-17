@@ -5,13 +5,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.springbook.biz.board.BoardBoard;
 import com.springbook.biz.board.BoardVO;
-import com.springbook.biz.board.Boardservice;
+
 
 @Controller
 public class BoardController {
 	@Autowired
-	Boardservice service;
+	BoardBoard service;
 
 	//목록조회
 	@RequestMapping("/boardList")

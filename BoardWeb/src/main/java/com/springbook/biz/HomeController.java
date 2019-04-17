@@ -13,7 +13,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.springbook.biz.board.Boardservice;
+import com.springbook.biz.board.BoardBoard;;
 
 @Controller //@Component 와 같음(빈등록)
 public class HomeController {
