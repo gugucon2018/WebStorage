@@ -7,17 +7,45 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.springbook.biz.board.BoardBoard;
 import com.springbook.biz.board.BoardVO;
+import com.springbook.biz.common.Paging;
 
 
 @Controller
 public class BoardController {
 	@Autowired
 	BoardBoard service;
+	
+		//수정폼
+		@RequestMapping("/boardUpdateForm")
+		public String boardUpdateForm(BoardVO vo, Model model) {
+			//단건조회
+			model.addAttribute("board", service.getBoard(vo));
+			return "boardUpdate";
+		}
+		
+		//수정처리
+		@RequestMapping("/boardUpdate.do")
+		public String boardUpdate(BoardVO vo) {
+			service.updateBoard(vo);
+			return "redirect:boardList";
+		}
+	
+	//삭제
+	@RequestMapping("deleteBoard")
+	public String deleteBoard(BoardVO vo) {
+		service.deleteBoard(vo);
+		return "redirect:boardList";
+	}	
 
 	//목록조회
 	@RequestMapping("/boardList")
-	public String boardList(Model model) {
-		model.addAttribute("list",service.getBoardList(null));
+	public String boardList(Model model, BoardVO vo, Paging paging) {
+		//페이징 처리
+		
+		
+		//전체 건수
+		paging.setTotalRecord(service.getBoardCount(vo));
+		model.addAttribute("list",service.getBoardList(vo));
 		return "board";
 	}
 	

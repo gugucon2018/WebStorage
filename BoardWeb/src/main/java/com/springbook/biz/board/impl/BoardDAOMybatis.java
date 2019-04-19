@@ -5,6 +5,8 @@ import java.util.List;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.springbook.biz.board.BoardVO;
 
@@ -12,6 +14,9 @@ import com.springbook.biz.board.BoardVO;
 public class BoardDAOMybatis {
 	@Autowired
 	SqlSessionTemplate mybatis;
+	
+	
+	
 	//등록
 	public void insertBoard(BoardVO vo) {
 		System.out.println("mybatis insert 실행");
@@ -34,6 +39,10 @@ public class BoardDAOMybatis {
 	//글 목록 조회
 	public List<BoardVO> getBoardList(BoardVO vo){
 		return mybatis.selectList("BoardDAO.getBoardList",vo);
+	}
+	
+	public int getBoardCount(BoardVO vo) {
+		return mybatis.selectOne("BoardDAO.getBoardCount",vo);
 	}
 	
 }

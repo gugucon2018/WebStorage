@@ -46,5 +46,10 @@ public class BoardServiceImpl implements BoardBoard {
 		// TODO Auto-generated method stub
 		return dao.getBoardList(vo);
 	}
+	
+	@Override
+	public int getBoardCount(BoardVO vo) {
+		return dao.getBoardCount(vo);
+	}
 
 }

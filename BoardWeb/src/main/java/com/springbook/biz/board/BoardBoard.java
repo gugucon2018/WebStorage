@@ -18,4 +18,6 @@ public interface BoardBoard {
 
 		// 글 목록 조회
 		List<BoardVO> getBoardList(BoardVO vo);
+		
+		public int getBoardCount(BoardVO vo);
 }
