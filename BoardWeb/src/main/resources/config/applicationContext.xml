@@ -16,8 +16,8 @@
 
 	<!-- Connection pool 설정 -->
 	<context:property-placeholder location="classpath:database.properties"/>
-	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" 
-	destroy-method="close">
+	<bean id="dataSourceSpied" class="org.apache.commons.dbcp.BasicDataSource" 
+	destroy-method="close">	
 		<property name="driverClassName" value="${jdbc.driver}"></property>
 		<property name="url" value="${jdbc.url}"></property>
 		<property name="username" value="${jdbc.username}"></property>
@@ -25,6 +25,15 @@
 		<property name="maxActive" value="20"></property>
 		<property name="maxWait" value="1000"></property>
 	</bean>
+	<bean id="dataSource" class="net.sf.log4jdbc.Log4jdbcProxyDataSource">
+<constructor-arg ref="dataSourceSpied" />
+<property name="logFormatter">
+<bean class="net.sf.log4jdbc.tools.Log4JdbcCustomFormatter">
+<property name="loggingType" value="MULTI_LINE" />
+<property name="sqlPrefix" value="SQL:::" />
+</bean>
+</property>
+</bean>
 
 	<!-- 정형화된 java의 jdbc를 대신 처리 -->
 	<bean class="org.springframework.jdbc.core.JdbcTemplate" id="jdbcTemplate">

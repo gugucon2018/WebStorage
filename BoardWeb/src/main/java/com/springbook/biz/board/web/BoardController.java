@@ -1,9 +1,14 @@
 package com.springbook.biz.board.web;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.springbook.biz.board.BoardBoard;
 import com.springbook.biz.board.BoardVO;
@@ -16,15 +21,18 @@ public class BoardController {
 	BoardBoard service;
 	
 		//수정폼
-		@RequestMapping("/boardUpdateForm")
-		public String boardUpdateForm(BoardVO vo, Model model) {
+		@RequestMapping(value="/boardUpdate/{seq}", method=RequestMethod.GET)
+		public String boardUpdateForm(BoardVO vo
+				, @PathVariable Integer seq
+				, Model model) {
+			vo.setSeq(seq);
 			//단건조회
 			model.addAttribute("board", service.getBoard(vo));
 			return "boardUpdate";
 		}
 		
 		//수정처리
-		@RequestMapping("/boardUpdate.do")
+		@RequestMapping(value="/boardUpdate", method=RequestMethod.POST)
 		public String boardUpdate(BoardVO vo) {
 			service.updateBoard(vo);
 			return "redirect:boardList";
@@ -39,9 +47,17 @@ public class BoardController {
 
 	//목록조회
 	@RequestMapping("/boardList")
-	public String boardList(Model model, BoardVO vo, Paging paging) {
-		//페이징 처리
+	public String boardList(Model model,  Paging paging
+			,@RequestParam(required=false
+			, defaultValue="TITLE", value="searchCondition") String searchCondition
+			,@RequestParam(required=false, defaultValue="") String searchKeyword) {
 		
+		//String searchCondition = request.getParameter("searchCondition");		
+		BoardVO vo = new BoardVO();
+		vo.setSearchCondition(searchCondition);
+		vo.setSearchKeyword(searchKeyword);
+		
+		//페이징 처리		
 		
 		//전체 건수
 		paging.setTotalRecord(service.getBoardCount(vo));

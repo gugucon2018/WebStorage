@@ -9,6 +9,13 @@
 </head>
 <body>
 <h3>게시판</h3>
+<c:if test="${not empty  sessionScope.userName }">
+	${userName} 님 환영
+	<input type="button" onclick="location='logout'" value="로그아웃" />
+</c:if>
+<c:if test="${empty sessionScope.userName}">
+	<a href="login">로그인</a>
+</c:if>
 검색조건  : ${boardVO}
 <form name="searchFrm">
 	<select name="searchCondition">
@@ -32,7 +39,7 @@
 	<tr>
 		<td>${board.seq}</td>
 		<td>${board.writer}</td>
-		<td><a href="boardUpdateForm.do?seq=${board.seq}">${board.title}</a></td>
+		<td><a href="boardUpdate/${board.seq}">${board.title}</a></td>
 		<td>${board.content}</td>
 		<td>${board.regDate}</td>
 		<td>${board.cnt}</td>
