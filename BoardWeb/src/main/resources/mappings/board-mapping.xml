@@ -68,8 +68,7 @@
     
     <select id="getBoardList" resultMap="boardResult"
         parameterType="board" >
-	    SELECT * 
-	    FROM BOARD	    
+	    SELECT A.* from (SELECT B.*, ROWNUM RN FROM (SELECT * FROM BOARD 
         <where>
         	<if test="searchKeyword != null and searchKeyword != ''">
             <choose>
@@ -82,7 +81,7 @@
             </choose>
             </if>
         </where>
-    	ORDER BY SEQ DESC
+    	ORDER BY SEQ ) B) A WHERE RN BETWEEN #{first} AND #{last}
 </select>
     <select id="getBoardCount" resultType="int">
             SELECT COUNT(*)

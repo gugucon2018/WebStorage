@@ -1,11 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="my" tagdir="/WEB-INF/tags" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+	function go_page(p){
+		searchFrm.page.value=p;
+		searchFrm.submit();
+	}
+</script>
 </head>
 <body>
 <img src="./images/Koala.jpg" style="width: 100">
@@ -52,5 +59,6 @@
 </table>
 <button>선택삭제</button>
 </form>
+<my:paging paging="${paging}" />
 </body>
 </html>

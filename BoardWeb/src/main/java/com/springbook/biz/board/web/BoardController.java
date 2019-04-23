@@ -46,7 +46,33 @@ public class BoardController {
 		conditionMap.put("작성자", "WRITER");
 		return conditionMap;		
 	}
+	//목록조회
+	@RequestMapping("/boardList")
+	public String boardList(Model model, Paging paging,
+			@RequestParam(required=false, defaultValue="TITLE", value="searchCondition") String cond,
+			@RequestParam(required=false) String searchKeyword) {
+	// @RequestParam의 required default값은 true 즉, 반드시 값이 있어야 함(파라미터 값이 null일때 실행 불가능)
+	BoardVO vo = new BoardVO();
+	vo.setSearchCondition(cond);
+	vo.setSearchKeyword(searchKeyword);
 	
+	paging.setPageUnit(5);
+	//페이지번호 파라미터
+	if(paging.getPage()==0) {
+		paging.setPage(1);
+	}
+	//시작/마지막 레코드 번호
+	vo.setFirst(paging.getFirst());
+	vo.setLast(paging.getLast());
+	
+	//전체건수
+	paging.setTotalRecord(service.getBoardCount(vo));
+	
+	model.addAttribute("paging",paging);
+	model.addAttribute("list",service.getBoardList(vo));
+	return "board";
+		
+	}
 		//수정폼
 		@RequestMapping(value="/boardUpdate/{seq}", method=RequestMethod.GET)
 		public String boardUpdateForm(BoardVO vo
@@ -77,25 +103,25 @@ public class BoardController {
 		return "redirect:boardList";
 	}	
 
-	//목록조회
-	@RequestMapping("/boardList")
-	public String boardList(Model model,  Paging paging
-			,@RequestParam(required=false
-			, defaultValue="TITLE", value="searchCondition") String searchCondition
-			,@RequestParam(required=false, defaultValue="") String searchKeyword) {
-		
-		//String searchCondition = request.getParameter("searchCondition");		
-		BoardVO vo = new BoardVO();
-		vo.setSearchCondition(searchCondition);
-		vo.setSearchKeyword(searchKeyword);
-		
-		//페이징 처리		
-		
-		//전체 건수
-		paging.setTotalRecord(service.getBoardCount(vo));
-		model.addAttribute("list",service.getBoardList(vo));
-		return "board";
-	}
+//	//목록조회
+//	@RequestMapping("/boardList")
+//	public String boardList(Model model,  Paging paging
+//			,@RequestParam(required=false
+//			, defaultValue="TITLE", value="searchCondition") String searchCondition
+//			,@RequestParam(required=false, defaultValue="") String searchKeyword) {
+//		
+//		//String searchCondition = request.getParameter("searchCondition");		
+//		BoardVO vo = new BoardVO();
+//		vo.setSearchCondition(searchCondition);
+//		vo.setSearchKeyword(searchKeyword);
+//		
+//		//페이징 처리		
+//		
+//		//전체 건수
+//		paging.setTotalRecord(service.getBoardCount(vo));
+//		model.addAttribute("list",service.getBoardList(vo));
+//		return "board";
+//	}
 	
 	// 등록폼
 	@RequestMapping("/boardInsertForm")
