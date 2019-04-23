@@ -10,8 +10,11 @@
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
 
-					<!-- base_package은 최초 시작할 위치지정 -->
-<context:component-scan base-package="com.springbook"/>
+<!-- 파일업로드 설정 -->
+<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" >
+	<property name="maxInMemorySize" value="102400"></property>
+	<property name="maxUploadSizePerFile" value="1048576"></property>
+</bean>
 <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
 
 	<!-- Connection pool 설정 -->
@@ -58,6 +61,9 @@
 		<aop:pointcut expression="execution(public * com..*(..))" id="txPointCut"/>
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="txPointCut"/>
 	</aop:config>
+	
+	
+	
 <!-- <import resource="context-aop.xml"/> -->
 
 <!-- <bean class="polymorphism.AppleSpeaker" id="speaker"/>

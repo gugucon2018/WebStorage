@@ -1,6 +1,10 @@
 package com.springbook.biz.user.web;
 
+import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,12 +43,18 @@ public class UserController {
 	@RequestMapping(value="/login", method=RequestMethod.POST)
 	public String login(@ModelAttribute("user") UserVO vo
 			, HttpServletRequest request
-			, HttpSession session) {
+			, HttpSession session
+			, HttpServletResponse response ) throws IOException {
 		//커맨드 객체는 자동으로 model.attribute("user", vo)
 		UserVO user = service.getUser(vo);
-		if( user == null )
-			return "login";
-		else {
+		if( user == null ) {
+			PrintWriter out = response.getWriter();
+			out.println("<script>");
+			out.println("alert('id error')");
+			out.println("history.go(-1);");//이전 페이지로 돌아감
+			out.println("</script>");
+			return "";
+		}else {
 			session.setAttribute("userName", user.getName());
 			session.setAttribute("id", user.getId());
 			session.setAttribute("user", user);

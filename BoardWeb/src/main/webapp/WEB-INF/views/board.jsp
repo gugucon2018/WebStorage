@@ -8,6 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<img src="./images/Koala.jpg" style="width: 100">
 <h3>게시판</h3>
 <c:if test="${not empty  sessionScope.userName }">
 	${userName} 님 환영
@@ -20,9 +21,10 @@
 <form name="searchFrm">
 	<select name="searchCondition">
 		<option value="">선택</option>
-		<option value="TITLE" <c:if test="${boardVO.searchCondition=='TITLE'}">selected</c:if>>제목</option>
-		<option value="CONTENT" <c:if test="${boardVO.searchCondition=='CONTENT'}">selected</c:if>>내용</option>		
-	</select>
+		<c:forEach items="${condMap}" var="option">
+					<option value="${option.value}">${option.key}
+		</c:forEach>
+			</select>
 	<script>
 		searchFrm.searchCondition.value='${boardVO.searchCondition}';
 	</script>
@@ -33,7 +35,7 @@
 <table border="1">
 <tr>
 <th>번호</th><th>작성자</th><th>제목</th>
-<th>내용</th><th>작성일자</th><th>조회수</th><th>삭제</th>
+<th>내용</th><th>작성일자</th><th>조회수</th><th>첨부파일</th><th>삭제</th>
 </tr>
 <c:forEach items="${list}" var="board">
 	<tr>
@@ -43,6 +45,7 @@
 		<td>${board.content}</td>
 		<td>${board.regDate}</td>
 		<td>${board.cnt}</td>
+		<td><a href="FileDown?seq=${board.seq}">${board.filename}</a></td>
 		<td><input type="checkbox" name="seqs" value="${board.seq}"></td>
 	</tr>		
 </c:forEach>

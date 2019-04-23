@@ -3,6 +3,8 @@ package com.springbook.biz.board;
 import java.sql.Date;
 import java.util.Arrays;
 
+import org.springframework.web.multipart.MultipartFile;
+
 public class BoardVO {
 	private int seq;
 	private String title;
@@ -13,7 +15,14 @@ public class BoardVO {
 	private String searchCondition;
 	private String searchKeyword;
 	private String[] seqs;	
+	private String filename;	
 	
+	public String getFilename() {
+		return filename;
+	}
+	public void setFilename(String filename) {
+		this.filename = filename;
+	}
 	public String[] getSeqs() {
 		return seqs;
 	}
