@@ -19,7 +19,6 @@ public class BoardVO {
 	private int first;
 	private int last;		
 	
-	
 	public int getFirst() {
 		return first;
 	}

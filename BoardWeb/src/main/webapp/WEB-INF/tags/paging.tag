@@ -6,8 +6,8 @@
 	<c:set var="jsFunc" value="go_page"></c:set>
 </c:if>
 <ul>
-<c:if test="${paging.startPage>1}">
-	<li><a href="javascript:${jsFunc}(${paging.startPage-1})">이전</a>
+<c:if test="${paging.page>1}">
+	<li><a href="javascript:${jsFunc}(${paging.page-1})">이전</a>
 </c:if>
 <c:forEach begin="${paging.startPage}" end="${paging.endPage}" var="i">
 	<c:if test="${i != paging.page}">
@@ -17,7 +17,7 @@
 		<li class="active">${i}
 	</c:if>
 </c:forEach>
-<c:if test="${paging.endPage<paging.totalPageCount}">
-	<li><a href="javascript:${jsFunc}(${paging.endPage+1})">다음</a>
+<c:if test="${paging.page<paging.totalPageCount}">
+	<li><a href="javascript:${jsFunc}(${paging.page+1})">다음</a>
 </c:if>
 </ul>

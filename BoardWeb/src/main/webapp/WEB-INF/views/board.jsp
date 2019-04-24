@@ -7,10 +7,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+	li{display: inline;}
+</style>
 <script>
 	function go_page(p){
-		searchFrm.page.value=p;
-		searchFrm.submit();
+		console.log(searchFrm.page);
+ 		searchFrm.page.value=p;
+		searchFrm.submit(); 
 	}
 </script>
 </head>
@@ -26,6 +30,7 @@
 </c:if>
 검색조건  : ${boardVO}
 <form name="searchFrm">
+	<input type="hidden" name="page">
 	<select name="searchCondition">
 		<option value="">선택</option>
 		<c:forEach items="${condMap}" var="option">

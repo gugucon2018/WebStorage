@@ -47,7 +47,7 @@ public class Paging {
 		startPage = (page-1)/pageSize * pageSize + 1;
 		endPage = (page-1)/pageSize  * pageSize  + pageSize ;
 		if ( endPage > getTotalPageCount() )
-			endPage = getTotalPageCount();
+			endPage = getTotalPageCount() ;
 	}
 	public int getPage() {
 		return page;
