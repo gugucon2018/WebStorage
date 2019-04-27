@@ -1,0 +1,157 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.scrollup {
+position: fixed;
+bottom: 20px;
+right: 20px;
+z-index: 1500;
+}
+h2 {
+  margin-top: 30px;
+}
+.red {
+	font-family: 'Nanum Gothic' !important;
+	color: red;
+}
+.nanum, h1, h2, h3, p, ul {
+	font-family: 'Nanum Gothic' !important;
+}
+.margin-top {
+	margin-top: 30px;
+}
+
+/*.form-control, .input-group-addon, .btn-default {
+border: 1px solid #555;
+}*/
+
+.btn-group-justified .btn.btn-default { border-right-color: transparent; }
+.btn-group-justified .btn-group:last-child .btn.btn-default { border-right-color: #ccc; }
+
+.a-link li.list-group-item { padding: 0; }
+.a-link li.list-group-item a { padding: 10px 15px; display: block; text-decoration: none; }
+
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/*.dropdown:hover ul.dropdown-menu{ display: block; }*/
+
+
+.scrollspy-example { position: relative; height: 200px; margin-top: 10px; overflow: auto; }
+
+
+
+body { position: relative; }
+
+
+.button-margin button[data-toggle="tooltip"] { margin:50px 20px 0 0; }
+
+
+
+.panel-heading { padding: 0; }
+.panel-heading a, .panel .panel-heading { padding: 10px 15px; display: block; text-decoration: none; }
+
+ /*캐러젤 페이드*/ 
+.carousel.carousel-fade .item {
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-ms-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+	opacity:0;
+}
+
+.carousel.carousel-fade .active.item {
+	opacity:1;
+}
+
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+	left: 0;
+	z-index: 2;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.carousel.carousel-fade .next,
+.carousel.carousel-fade .prev {
+	left: 0;
+	z-index: 1;
+}
+
+.carousel.carousel-fade .carousel-control {
+	z-index: 3;
+}
+
+/*세로형 슬라이드*/
+/*.carousel.vertical .carousel-inner {
+  height: 100%;
+}
+.carousel.vertical .item {
+  -webkit-transition: 0.6s ease-in-out top;
+  -moz-transition:    0.6s ease-in-out top;
+  -ms-transition:     0.6s ease-in-out top;
+  -o-transition:      0.6s ease-in-out top;
+  left:               0;
+}
+.carousel.vertical .active,
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right    { top:     0; }
+.carousel.vertical .next,
+.carousel.vertical .active.right  { top:  100%; }
+.carousel.vertical .prev,
+.carousel.vertical .active.left   { top: -100%; }*/
+
+
+
+/*.affix.top { top: 100px; left: 100px; }
+.affix.bottom {	bottom: 100px; 	left: 100px; 	position: absolute; }*/
+/*.affix-bottom.bottom { position: static !important; top: 0 !important; }*/
+
+
+
+.affix {
+  top: 100px; left: 100px;
+}
+.affix-bottom {
+  position: absolute;
+}
+
+

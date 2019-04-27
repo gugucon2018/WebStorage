@@ -1,0 +1,1889 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>부트스트랩 연습</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link href="fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron.css" rel="stylesheet">
+    <link href="css/docs.min.css" rel="stylesheet">
+    <link href="css/bootstrap.vertical-tabs.css" rel="stylesheet">
+    
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  </head>
+
+  <body id="header">
+<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Project name</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class=""><a href="index.html">CSS <span class="sr-only">(current)</span></a></li>
+          <li class=""><a href="index2.html">구성요소</a></li>
+          <li class=""><a href="index3.html">자바스크립트<span class="sr-only">(current)</span></a></li>
+        </ul>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>안녕하세요<small>부트스트랩 기초 연습입니다.(구성요소)</small></h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>  
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns --> 
+
+
+<h1>구성요소(Components)</h1>
+
+<h2>아이콘(Glyphicons)</h2>
+
+<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+<i class="fa fa-angellist"></i>
+
+<h2>폰트 어썸의 유니코드</h2>
+
+<span style="font-family: FontAwesome;font-size: 40px;">&#xf015;</span>
+<hr>
+
+<h2>부트스트랩 아이콘의 사용예</h2>
+
+<button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+</button>
+
+<button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+</button>
+<hr>
+<h2>드롭다운</h2>
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" aria-haspopup="true" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+  </ul>
+</div>
+<hr>
+
+<h2>오른쪽 드롭다운</h2>
+
+
+<div class="dropdown pull-right">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+  </ul>
+</div>
+<hr>
+
+<h2>드롭다운 메뉴 헤더와 디바이더, 아이템 비활성화</h2>
+
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation" class="dropdown-header">Dropdown header 1</li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation" class="dropdown-header">Dropdown header 2</li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+    <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Disabled link</a></li>
+  </ul>
+</div>
+<hr>
+
+<h2>버튼 그룹</h2>
+
+<div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">Left</button>
+  <button type="button" class="btn btn-default">Middle</button>
+  <button type="button" class="btn btn-default">Right</button>
+</div>
+
+<hr>
+
+<h2>버튼 툴바</h2>
+
+<div class="btn-toobar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group" role="group" aria-label="First group">
+    <button type="button" class="btn btn-default">1</button>
+    <button type="button" class="btn btn-default">2</button>
+    <button type="button" class="btn btn-default">3</button>
+    <button type="button" class="btn btn-default">4</button>
+  </div>
+  <div class="btn-group" role="group" aria-label="Second group">
+    <button type="button" class="btn btn-default">5</button>
+    <button type="button" class="btn btn-default">6</button>
+    <button type="button" class="btn btn-default">7</button>
+  </div>
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button" class="btn btn-default">8</button>
+  </div>
+</div>
+<hr>
+
+<h2>버튼 그룹의 크기 조절</h2>
+
+
+<div class="bs-example">
+  <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+    <button type="button" class="btn btn-default">Left</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Right</button>
+  </div>
+  <br>
+  <div class="btn-group" role="group" aria-label="Default button group">
+    <button type="button" class="btn btn-default">Left</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Right</button>
+  </div>
+  <br>
+  <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+    <button type="button" class="btn btn-default">Left</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Right</button>
+  </div>
+  <br>
+  <div class="btn-group btn-group-xs" role="group" aria-label="Extra-small button group">
+    <button type="button" class="btn btn-default">Left</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Right</button>
+  </div>
+</div>
+<hr>
+
+
+<h2>네스팅(Nesting)</h2>
+
+<div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">1</button>
+  <button type="button" class="btn btn-default">2</button>
+
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+      Dropdown
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Dropdown link</a></li>
+      <li><a href="#">Dropdown link</a></li>
+    </ul>
+  </div>
+</div>
+<hr>
+
+<h2>세로형 버튼 그룹(Vertical button group)</h2>
+
+<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+  <button type="button" class="btn btn-default">Button</button>
+  <button type="button" class="btn btn-default">Button</button>
+  <div class="btn-group" role="group">
+    <button id="btnGroupVerticalDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+      Dropdown
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop1">
+      <li><a href="#">Dropdown link</a></li>
+      <li><a href="#">Dropdown link</a></li>
+    </ul>
+  </div>
+  <button type="button" class="btn btn-default">Button</button>
+  <button type="button" class="btn btn-default">Button</button>
+  <div class="btn-group" role="group">
+    <button id="btnGroupVerticalDrop2" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+      Dropdown
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop2">
+      <li><a href="#">Dropdown link</a></li>
+      <li><a href="#">Dropdown link</a></li>
+    </ul>
+  </div>
+  <div class="btn-group" role="group">
+    <button id="btnGroupVerticalDrop3" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+      Dropdown
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop3">
+      <li><a href="#">Dropdown link</a></li>
+      <li><a href="#">Dropdown link</a></li>
+    </ul>
+  </div>
+  <div class="btn-group" role="group">
+    <button id="btnGroupVerticalDrop4" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+      Dropdown
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop4">
+      <li><a href="#">Dropdown link</a></li>
+      <li><a href="#">Dropdown link</a></li>
+    </ul>
+  </div>
+</div>
+<hr>
+
+<h2>분리된 세로형 버튼 툴바</h2>
+
+<div class="btn-group-vertical" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">1</button>
+  <button type="button" class="btn btn-default">2</button>
+
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+      Dropdown
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Dropdown link</a></li>
+      <li><a href="#">Dropdown link</a></li>
+    </ul>
+  </div>
+</div>
+<div class="clearfix" style="height: 10px;"></div>
+<div class="btn-group-vertical" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">1</button>
+  <button type="button" class="btn btn-default">2</button>
+
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+      Dropdown
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Dropdown link</a></li>
+      <li><a href="#">Dropdown link</a></li>
+    </ul>
+  </div>
+</div>
+<hr>
+
+<div class="btn-group btn-group-justified" role="group" aria-label="Justified button group with nested dropdown">
+  <a href="#" class="btn btn-default" role="button">Left</a>
+  <a href="#" class="btn btn-default" role="button">Middle</a>
+  <div class="btn-group" role="group">
+    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+      Dropdown <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+</div>
+<hr>
+
+<h2>전체 폭 버튼 그룹(Justified button groups)</h2>
+
+<h3>a 태그일 때</h3>
+
+<div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">Left</button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">Middle</button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">Right</button>
+  </div>
+</div>
+<hr>
+
+<h3>button 태그일 때</h3>
+
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    Action 
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<hr>
+
+
+<h2>버튼 드롭다운</h2>
+
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Default <span class="caret"></span></button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div><!-- /btn-group -->
+<div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Primary <span class="caret"></span></button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div><!-- /btn-group -->
+<div class="btn-group">
+  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Success <span class="caret"></span></button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div><!-- /btn-group -->
+<div class="btn-group">
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Info <span class="caret"></span></button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div><!-- /btn-group -->
+<div class="btn-group">
+  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Warning <span class="caret"></span></button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div><!-- /btn-group -->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Danger <span class="caret"></span></button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div><!-- /btn-group -->
+
+
+<h2>분리된 버튼 드롭다운</h2>
+
+<div class="btn-group">
+  <button type="button" class="btn btn-danger">Action</button>
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+<hr>
+
+
+
+<div class="btn-group">
+  <button type="button" class="btn btn-default">Default</button>
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div><!-- /btn-group -->
+<div class="btn-group">
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div><!-- /btn-group -->
+<div class="btn-group">
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div><!-- /btn-group -->
+<div class="btn-group">
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div><!-- /btn-group -->
+<div class="btn-group">
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div><!-- /btn-group -->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div><!-- /btn-group -->
+
+<hr>
+
+<h2>버튼 드롭다운의 크기 조절</h2>
+
+<div class="btn-group">
+  <button type="button" class="btn btn-primary btn-lg">Action</button>
+  <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-default">Action</button>
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-danger btn-sm">Action</button>
+  <button type="button" class="btn btn-danger btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-info btn-xs">Action</button>
+  <button type="button" class="btn btn-info btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<hr>
+
+
+<h2>버튼 드롭업(Drop-up)</h2>
+
+<div class="btn-group dropup">
+  <button type="button" class="btn btn-default">Dropup</button>
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+<h2>입력상자 그룹(Input groups)</h2>
+
+<form class="bs-example bs-example-form" role="form">
+<div class="input-group">
+  <span class="input-group-addon">@</span>
+  <input type="text" class="form-control" placeholder="Username">
+</div>
+<br>
+<div class="input-group">
+  <input type="text" class="form-control">
+  <span class="input-group-addon">.00</span>
+</div>
+<br>
+<div class="input-group">
+  <span class="input-group-addon">$</span>
+  <input type="text" class="form-control">
+  <span class="input-group-addon">.00</span>
+</div>
+</form>
+
+<h2>입력상자 그룹 사이즈</h2>
+<form class="bs-example bs-example-form" role="form">
+<div class="input-group input-group-lg">
+  <span class="input-group-addon">@</span>
+  <input type="text" class="form-control" placeholder="Username">
+</div>
+
+<div class="input-group">
+  <span class="input-group-addon">@</span>
+  <input type="text" class="form-control" placeholder="Username">
+</div>
+
+<div class="input-group input-group-sm">
+  <span class="input-group-addon">@</span>
+  <input type="text" class="form-control" placeholder="Username">
+</div>
+</form>
+
+<h2>체크박스와 라디오버튼</h2>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox">
+      </span>
+      <input type="text" class="form-control">
+    </div><!-- /input-group -->
+  </div><!-- /.col-sm-6 -->
+  <div class="col-sm-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="radio">
+      </span>
+      <input type="text" class="form-control">
+    </div><!-- /input-group -->
+  </div><!-- /.col-sm-6 -->
+</div><!-- /.row -->
+
+<h2>버튼 추가</h2>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+      <input type="text" class="form-control">
+    </div><!-- /input-group -->
+  </div><!-- /.col-sm-6 -->
+  <div class="col-sm-6">
+    <div class="input-group">
+      <input type="text" class="form-control">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-sm-6 -->
+</div><!-- /.row -->
+
+<h2>버튼 드롭다운이 있는 입력상자</h2>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <input type="text" class="form-control">
+    </div><!-- /input-group -->
+  </div><!-- /.col-sm-6 -->
+  <div class="col-sm-6">
+    <div class="input-group">
+      <input type="text" class="form-control">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+    </div><!-- /input-group -->
+  </div><!-- /.col-sm-6 -->
+</div><!-- /.row -->
+
+<h2>분리된 버튼이 있는 입력상자</h2>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default" tabindex="-1">Action</button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          <span class="caret"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <input type="text" class="form-control">
+    </div><!-- /.input-group -->
+  </div><!-- /.col-sm-6 -->
+  <div class="col-sm-6">
+    <div class="input-group">
+      <input type="text" class="form-control">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default" tabindex="-1">Action</button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          <span class="caret"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>
+    </div><!-- /.input-group -->
+  </div><!-- /.col-sm-6 -->
+</div>
+
+<h2>탭</h2>
+  <ul id="myTab" class="nav nav-tabs" role="tablist">
+    <li role="presentation" class=""><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="false">Home</a></li>
+    <li role="presentation" class="active"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="true">Profile</a></li>
+    <li role="presentation" class="dropdown">
+      <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents">Dropdown <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
+        <li><a href="#dropdown1" tabindex="-1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">@fat</a></li>
+        <li><a href="#dropdown2" tabindex="-1" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2">@mdo</a></li>
+      </ul>
+    </li>
+  </ul>
+  <div id="myTabContent" class="tab-content">
+    <div role="tabpanel" class="tab-pane fade" id="home" aria-labelledby="home-tab">
+      <p>Home content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade active in" id="profile" aria-labelledby="profile-tab">
+      <p>Profile content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="dropdown1" aria-labelledby="dropdown1-tab">
+      <p>@fat content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="dropdown2" aria-labelledby="dropdown2-tab">
+      <p>@mdo content</p>
+    </div>
+  </div>
+<hr>
+<h2>좌측 탭</h2>
+<div class="col-sm-3">
+  <ul id="myTab2" class="nav nav-tabs tabs-left" role="tablist">
+    <li role="presentation" class=""><a href="#home2" id="home-tab2" role="tab" data-toggle="tab" aria-controls="home2" aria-expanded="false">홈</a></li>
+    <li role="presentation" class="active"><a href="#profile2" role="tab" id="profile-tab2" data-toggle="tab" aria-controls="profile2" aria-expanded="true">프로필</a></li>
+    <li role="presentation" class="dropdown">
+      <a href="#" id="myTabDrop2" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents2">Dropdown <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop2" id="myTabDrop1-contents2">
+        <li><a href="#dropdown1-2" tabindex="-1" role="tab" id="dropdown1-tab2" data-toggle="tab" aria-controls="dropdown1-2">@fat</a></li>
+        <li><a href="#dropdown2-2" tabindex="-1" role="tab" id="dropdown2-tab2" data-toggle="tab" aria-controls="dropdown2-2">@mdo</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>  
+<div class="col-sm-9">
+  <div id="myTabContent2" class="tab-content">
+    <div role="tabpanel" class="tab-pane fade" id="home2" aria-labelledby="home-tab2">
+      <p>Home content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade active in" id="profile2" aria-labelledby="profile-tab2">
+      <p>Profile content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="dropdown1-2" aria-labelledby="dropdown1-tab2">
+      <p>@fat content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="dropdown2-2" aria-labelledby="dropdown2-tab2">
+      <p>@mdo content</p>
+    </div>
+  </div>
+</div> 
+<div class="clearfix"></div>
+<hr>
+<h2>우측 탭</h2>
+<div class="col-sm-3 col-sm-push-9">
+  <ul id="myTab3" class="nav nav-tabs tabs-right" role="tablist">
+    <li role="presentation" class=""><a href="#home3" id="home-tab3" role="tab" data-toggle="tab" aria-controls="home3" aria-expanded="false">홈</a></li>
+    <li role="presentation" class="active"><a href="#profile3" role="tab" id="profile-tab3" data-toggle="tab" aria-controls="profile3" aria-expanded="true">프로필</a></li>
+    <li role="presentation" class="dropdown">
+      <a href="#" id="myTabDrop3" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents3">Dropdown <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop3" id="myTabDrop1-contents">
+        <li><a href="#dropdown1-3" tabindex="-1" role="tab" id="dropdown1-tab3" data-toggle="tab" aria-controls="dropdown1-3">@fat</a></li>
+        <li><a href="#dropdown2-3" tabindex="-1" role="tab" id="dropdown2-tab3" data-toggle="tab" aria-controls="dropdown2-3">@mdo</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>  
+<div class="col-sm-9 col-sm-pull-3">
+  <div id="myTabContent3" class="tab-content">
+    <div role="tabpanel" class="tab-pane fade" id="home3" aria-labelledby="home-tab3">
+      <p>Home content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade active in" id="profile3" aria-labelledby="profile-tab3">
+      <p>Profile content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="dropdown1-3" aria-labelledby="dropdown1-tab3">
+      <p>@fat content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="dropdown2-3" aria-labelledby="dropdown2-tab3">
+      <p>@mdo content</p>
+    </div>
+  </div>
+</div>
+<div class="clearfix"></div>
+<hr>
+<h2>사이드웨이</h2>
+<div class="col-sm-3">
+  <ul id="myTab4" class="nav nav-tabs tabs-left sideways" role="tablist">
+    <li role="presentation" class=""><a href="#home4" id="home-tab4" role="tab" data-toggle="tab" aria-controls="home4" aria-expanded="false">홈</a></li>
+    <li role="presentation" class="active"><a href="#profile4" role="tab" id="profile-tab4" data-toggle="tab" aria-controls="profile4" aria-expanded="true">프로필</a></li>
+    <li role="presentation" class="dropdown">
+      <a href="#" id="myTabDrop4" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents4">Dropdown <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop4" id="myTabDrop1-contents4">
+        <li><a href="#dropdown1-4" tabindex="-1" role="tab" id="dropdown1-tab4" data-toggle="tab" aria-controls="dropdown1-4">@fat</a></li>
+        <li><a href="#dropdown2-4" tabindex="-1" role="tab" id="dropdown2-tab4" data-toggle="tab" aria-controls="dropdown2-4">@mdo</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>  
+<div class="col-sm-9">
+  <div id="myTabContent4" class="tab-content">
+    <div role="tabpanel" class="tab-pane fade" id="home4" aria-labelledby="home-tab4">
+      <p>Home content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade active in" id="profile4" aria-labelledby="profile-tab4">
+      <p>Profile content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="dropdown1-4" aria-labelledby="dropdown1-tab4">
+      <p>@fat content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="dropdown2-4" aria-labelledby="dropdown2-tab4">
+      <p>@mdo content</p>
+    </div>
+  </div>
+</div>
+<div class="clearfix"></div>
+
+<h2>필 기본</h2>
+  <ul id="myTab5" class="nav nav-pills" role="tablist">
+    <li role="presentation" class=""><a href="#home5" id="home-tab5" role="tab" data-toggle="tab" aria-controls="home5" aria-expanded="false">Home</a></li>
+    <li role="presentation" class="active"><a href="#profile5" role="tab" id="profile-tab5" data-toggle="tab" aria-controls="profile5" aria-expanded="true">Profile</a></li>
+    <li role="presentation" class="dropdown">
+      <a href="#" id="myTabDrop5" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents5">Dropdown <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop5" id="myTabDrop1-contents5">
+        <li><a href="#dropdown1-5" tabindex="-1" role="tab" id="dropdown1-tab5" data-toggle="tab" aria-controls="dropdown1-5">@fat</a></li>
+        <li><a href="#dropdown2-5" tabindex="-1" role="tab" id="dropdown2-tab5" data-toggle="tab" aria-controls="dropdown2-5">@mdo</a></li>
+      </ul>
+    </li>
+  </ul>
+  <div id="myTabContent5" class="tab-content">
+    <div role="tabpanel" class="tab-pane fade" id="home5" aria-labelledby="home-tab5">
+      <p>Home content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade active in" id="profile5" aria-labelledby="profile-tab5">
+      <p>Profile content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="dropdown1-5" aria-labelledby="dropdown1-tab5">
+      <p>@fat content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="dropdown2-5" aria-labelledby="dropdown2-tab5">
+      <p>@mdo content</p>
+    </div>
+  </div>
+<hr>
+<div class="clearfix"></div>
+
+<h2>필 좌측</h2>
+<div class="col-sm-3">
+  <ul id="myTab6" class="nav nav-pills nav-stacked" role="tablist">
+    <li role="presentation" class=""><a href="#home6" id="home-tab6" role="tab" data-toggle="tab" aria-controls="home6" aria-expanded="false">Home</a></li>
+    <li role="presentation" class="active"><a href="#profile6" role="tab" id="profile-tab6" data-toggle="tab" aria-controls="profile6" aria-expanded="true">Profile</a></li>
+    <li role="presentation" class="dropdown">
+      <a href="#" id="myTabDrop6" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents6">Dropdown <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop6" id="myTabDrop1-contents6">
+        <li><a href="#dropdown1-6" tabindex="-1" role="tab" id="dropdown1-tab6" data-toggle="tab" aria-controls="dropdown1-6">@fat</a></li>
+        <li><a href="#dropdown2-6" tabindex="-1" role="tab" id="dropdown2-tab6" data-toggle="tab" aria-controls="dropdown2-6">@mdo</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div class="col-sm-9">  
+  <div id="myTabContent6" class="tab-content">
+    <div role="tabpanel" class="tab-pane fade" id="home6" aria-labelledby="home-tab6">
+      <p>Home content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade active in" id="profile6" aria-labelledby="profile-tab6">
+      <p>Profile content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="dropdown1-6" aria-labelledby="dropdown1-tab6">
+      <p>@fat content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="dropdown2-6" aria-labelledby="dropdown2-tab6">
+      <p>@mdo content</p>
+    </div>
+  </div>
+</div>
+<div class="clearfix"></div>  
+<hr>
+<h2>필 우측</h2>
+<div class="col-sm-3 col-sm-push-9">
+  <ul id="myTab7" class="nav nav-pills nav-stacked" role="tablist">
+    <li role="presentation" class=""><a href="#home7" id="home-tab7" role="tab" data-toggle="tab" aria-controls="home7" aria-expanded="false">Home</a></li>
+    <li role="presentation" class="active"><a href="#profile7" role="tab" id="profile-tab7" data-toggle="tab" aria-controls="profile7" aria-expanded="true">Profile</a></li>
+    <li role="presentation" class="dropdown">
+      <a href="#" id="myTabDrop7" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents7">Dropdown <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop7" id="myTabDrop1-contents7">
+        <li><a href="#dropdown1-7" tabindex="-1" role="tab" id="dropdown1-tab7" data-toggle="tab" aria-controls="dropdown1-7">@fat</a></li>
+        <li><a href="#dropdown2-7" tabindex="-1" role="tab" id="dropdown2-tab7" data-toggle="tab" aria-controls="dropdown2-7">@mdo</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div class="col-sm-9 col-sm-pull-3">  
+  <div id="myTabContent7" class="tab-content">
+    <div role="tabpanel" class="tab-pane fade" id="home7" aria-labelledby="home-tab7">
+      <p>Home content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade active in" id="profile7" aria-labelledby="profile-tab7">
+      <p>Profile content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="dropdown1-7" aria-labelledby="dropdown1-tab7">
+      <p>@fat content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="dropdown2-7" aria-labelledby="dropdown2-tab7">
+      <p>@mdo content</p>
+    </div>
+  </div>
+</div>
+<div class="clearfix"></div>  
+<hr>
+
+<h2>탭 전체 정렬</h2>
+  <ul id="myTab8" class="nav nav-tabs nav-justified" role="tablist">
+    <li role="presentation"  class="disabled"><a href="#home8" id="home-tab8" role="tab" data-toggle="tab" aria-controls="home8" aria-expanded="false">Home</a></li>
+    <li role="presentation" class="active"><a href="#profile8" role="tab" id="profile-tab8" data-toggle="tab" aria-controls="profile8" aria-expanded="true">Profile</a></li>
+    <li role="presentation" class="dropdown">
+      <a href="#" id="myTabDrop8" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents8">Dropdown <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop8" id="myTabDrop1-contents8">
+        <li><a href="#dropdown1-8" tabindex="-1" role="tab" id="dropdown1-tab8" data-toggle="tab" aria-controls="dropdown1-8">@fat</a></li>
+        <li><a href="#dropdown2-8" tabindex="-1" role="tab" id="dropdown2-tab8" data-toggle="tab" aria-controls="dropdown2-8">@mdo</a></li>
+      </ul>
+    </li>
+  </ul>
+  <div id="myTabContent8" class="tab-content">
+    <div role="tabpanel" class="tab-pane fade" id="home8" aria-labelledby="home-tab8">
+      <p>Home content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade active in" id="profile8" aria-labelledby="profile-tab8">
+      <p>Profile content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="dropdown1-8" aria-labelledby="dropdown1-tab8">
+      <p>@fat content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="dropdown2-8" aria-labelledby="dropdown2-tab8">
+      <p>@mdo content</p>
+    </div>
+  </div>
+<div class="clearfix"></div>  
+<hr>
+
+<h2>필 전체 정렬</h2>
+  <ul id="myTab9" class="nav nav-pills nav-justified" role="tablist">
+    <li role="presentation"  class="disabled"><a href="#home9" id="home-tab9" role="tab" data-toggle="tab" aria-controls="home9" aria-expanded="false">Home</a></li>
+    <li role="presentation" class="active"><a href="#profile9" role="tab" id="profile-tab9" data-toggle="tab" aria-controls="profile9" aria-expanded="true">Profile</a></li>
+    <li role="presentation" class="dropdown">
+      <a href="#" id="myTabDrop9" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents9">Dropdown <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop9" id="myTabDrop1-contents9">
+        <li><a href="#dropdown1-9" tabindex="-1" role="tab" id="dropdown1-tab9" data-toggle="tab" aria-controls="dropdown1-9">@fat</a></li>
+        <li><a href="#dropdown2-9" tabindex="-1" role="tab" id="dropdown2-tab9" data-toggle="tab" aria-controls="dropdown2-9">@mdo</a></li>
+      </ul>
+    </li>
+  </ul>
+  <div id="myTabContent9" class="tab-content">
+    <div role="tabpanel" class="tab-pane fade" id="home9" aria-labelledby="home-tab9">
+      <p>Home content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade active in" id="profile9" aria-labelledby="profile-tab9">
+      <p>Profile content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="dropdown1-9" aria-labelledby="dropdown1-tab9">
+      <p>@fat content</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="dropdown2-9" aria-labelledby="dropdown2-tab9">
+      <p>@mdo content</p>
+    </div>
+  </div>
+<div class="clearfix"></div>  
+<hr>
+
+<h2>냅바</h2>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapse collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<h2>브랜드 이미지</h2>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="...">
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+<div class="clearfix"></div>
+<h2>폼과 버튼, 텍스트와 링크</h2>
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      
+      <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+      <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
+    </div>
+  </div>
+</nav>
+
+<h2>브레드크럼</h2>
+<ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Library</a></li>
+  <li class="active">Data</li>
+</ol>
+
+<h2>페이지 처리</h2>
+<nav>
+  <ul class="pagination">
+    <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+  </ul>
+</nav>
+
+<h2>비활성, 활성 상태</h2>
+<nav>
+  <ul class="pagination">
+    <li class="disabled"><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+ </ul>
+</nav>
+
+<h2>페이지 처리 크기조절</h2>
+<nav>
+  <ul class="pagination pagination-lg">
+    <li><a href="#"><span aria-hidden="true">«</span><span class="sr-only">Previous</span></a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
+  </ul>
+</nav>
+<nav>
+  <ul class="pagination">
+    <li><a href="#"><span aria-hidden="true">«</span><span class="sr-only">Previous</span></a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
+  </ul>
+</nav>
+<nav>
+  <ul class="pagination pagination-sm">
+    <li><a href="#"><span aria-hidden="true">«</span><span class="sr-only">Previous</span></a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
+  </ul>
+</nav>
+
+<h2>페이저</h2>
+<nav>
+  <ul class="pager">
+    <li><a href="#">Previous</a></li>
+    <li><a href="#">Next</a></li>
+  </ul>
+</nav>
+
+<nav>
+  <ul class="pager">
+    <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+    <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>
+
+<h2>레이블과 배지</h2>
+<h3>Example heading <span class="label label-default">New</span></h3>
+<span class="label label-default">Default</span>
+<span class="label label-primary">Primary</span>
+<span class="label label-success">Success</span>
+<span class="label label-info">Info</span>
+<span class="label label-warning">Warning</span>
+<span class="label label-danger">Danger</span>
+<hr>
+<a href="#">Inbox <span class="badge">42</span></a>
+
+<button class="btn btn-primary" type="button">
+  Messages <span class="badge badge-primary">4</span>
+</button>
+
+<h2>점보트론</h2>
+<div class="jumbotron">
+  <h1>Hello, world!</h1>
+  <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+</div>
+
+<div class="jumbotron">
+  <div class="container">
+    ...
+  </div>
+</div>
+
+<div class="container">
+  <div class="jumbotron">
+    ...
+  </div>
+</div>
+
+<h2>페이지 헤더</h2>
+<div class="page-header">
+  <h1>Example page header <small>Subtext for header</small></h1>
+</div>
+
+<h2>썸네일</h2>
+<div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="holder.js/300x200">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="holder.js/300x200">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="holder.js/300x200">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="holder.js/300x200">
+    </a>
+  </div>
+</div>
+
+<h2>커스텀 콘텐츠</h2>
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img data-src="holder.js/100%x200">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img data-src="holder.js/100%x200">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img data-src="holder.js/100%x200">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<h2>알림 메시지</h2>
+<div class="alert alert-success" role="alert">
+  <strong>Well done!</strong> You successfully read this important alert message.
+</div>
+<div class="alert alert-info" role="alert">
+  <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+</div>
+<div class="alert alert-warning" role="alert">
+  <strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
+<div class="alert alert-danger" role="alert">
+  <strong>Oh snap!</strong> Change a few things up and try submitting again.
+</div>
+<h2>닫기 아이콘</h2>
+<div class="alert alert-warning alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  <strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
+<h2>링크 추가</h2>
+<div class="alert alert-success" role="alert">
+  <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+</div>
+<div class="alert alert-info" role="alert">
+  <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+</div>
+<div class="alert alert-warning" role="alert">
+  <strong>Warning!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>.
+</div>
+<div class="alert alert-danger" role="alert">
+  <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+</div>
+
+<h2>프로그레스 바</h2>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    60%
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+    0%
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="width: 2%;">
+    2%
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+    <span class="sr-only">40% Complete (success)</span>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+    <span class="sr-only">20% Complete</span>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    <span class="sr-only">60% Complete (warning)</span>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+    <span class="sr-only">80% Complete (danger)</span>
+  </div>
+</div>
+
+
+<div class="progress">
+  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+    <span class="sr-only">40% Complete (success)</span>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+    <span class="sr-only">20% Complete</span>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    <span class="sr-only">60% Complete (warning)</span>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+    <span class="sr-only">80% Complete (danger)</span>
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+    <span class="sr-only">45% Complete</span>
+  </div>
+</div>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-success" style="width: 35%">
+    <span class="sr-only">35% Complete (success)</span>
+  </div>
+  <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+    <span class="sr-only">20% Complete (warning)</span>
+  </div>
+  <div class="progress-bar progress-bar-danger" style="width: 10%">
+    <span class="sr-only">10% Complete (danger)</span>
+  </div>
+</div>
+
+<h2>미디어 오브젝트</h2>
+<div class="media">
+  <a class="media-left" href="#">
+    <img data-src="holder.js/64x64">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">Media heading</h4>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+  </div>
+</div>
+<div class="media">
+  <a class="media-left" href="#">
+    <img data-src="holder.js/64x64">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">Media heading</h4>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    <div class="media">
+      <a class="media-left" href="#">
+        <img data-src="holder.js/64x64">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Nested media heading</h4>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      </div>
+    </div>
+  </div>
+</div>
+<div class="media">
+  <div class="media-body">
+    <h4 class="media-heading">Media heading</h4>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+  </div>
+  <a class="media-right" href="#">
+    <img data-src="holder.js/64x64">
+  </a>
+</div>
+<div class="media">
+  <a class="media-left" href="#">
+    <img data-src="holder.js/64x64">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">Media heading</h4>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+  </div>
+  <a class="media-right" href="#">
+    <img data-src="holder.js/64x64">
+  </a>
+</div>
+
+<div class="media">
+  <a class="media-left" href="#">
+    <img data-src="holder.js/64x64">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">Top aligned media</h4>
+    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+  </div>
+</div>
+<div class="media">
+  <a class="media-left media-middle" href="#">
+    <img data-src="holder.js/64x64">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">Middle aligned media</h4>
+    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+  </div>
+</div>
+<div class="media">
+  <a class="media-left media-bottom" href="#">
+    <img data-src="holder.js/64x64">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">Bottom aligned media</h4>
+    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+    <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+  </div>
+</div>
+
+
+<ul class="media-list">
+  <li class="media">
+    <a class="media-left" href="#">
+     <img data-src="holder.js/64x64">
+    </a>
+    <div class="media-body">
+      <h4 class="media-heading">Media heading</h4>
+      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+      <!-- Nested media object -->
+      <div class="media">
+        <a class="media-left" href="#">
+          <img data-src="holder.js/64x64">
+        </a>
+        <div class="media-body">
+          <h4 class="media-heading">Nested media heading</h4>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+          <!-- Nested media object -->
+          <div class="media">
+            <a class="media-left" href="#">
+              <img data-src="holder.js/64x64">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading">Nested media heading</h4>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Nested media object -->
+      <div class="media">
+        <a class="media-left" href="#">
+          <img data-src="holder.js/64x64">
+        </a>
+        <div class="media-body">
+          <h4 class="media-heading">Nested media heading</h4>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<ul class="media-list">
+  <li class="media">
+    <a class="media-left" href="#">
+      <img src="..." alt="...">
+    </a>
+    <div class="media-body">
+      <h4 class="media-heading">Media heading</h4>
+      ...
+    </div>
+  </li>
+</ul>
+
+
+<h2>리스트 그룹</h2>
+<ul class="list-group">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+
+<ul class="list-group">
+  <li class="list-group-item">
+    <span class="badge">14</span>
+    Cras justo odio
+  </li>
+  <li class="list-group-item">
+    <span class="badge">2</span>
+    Dapibus ac facilisis in
+  </li>
+  <li class="list-group-item">
+    <span class="badge">1</span>
+    Morbi leo risus
+  </li>
+</ul>
+
+<div class="list-group">
+  <a href="#" class="list-group-item active">
+    Cras justo odio
+  </a>
+  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item">Morbi leo risus</a>
+  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item disabled">Vestibulum at eros</a>
+</div>
+
+<ul class="list-group">
+  <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+  <li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
+  <li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+  <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+</ul>
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
+  <a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
+</div>
+<ul class="list-group a-link">
+  <li class="list-group-item list-group-item-success"><a href="#">Dapibus ac facilisis in</a></li>
+  <li class="list-group-item list-group-item-info"><a href="#">Cras sit amet nibh libero</a></li>
+  <li class="list-group-item list-group-item-warning"><a href="#">Porta ac consectetur ac</a></li>
+  <li class="list-group-item list-group-item-danger"><a href="http://daum.net">Vestibulum at eros</a></li>
+</ul>
+
+<div class="list-group">
+  <a href="#" class="list-group-item active">
+    <h4 class="list-group-item-heading">List group item heading</h4>
+    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">List group item heading</h4>
+    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">List group item heading</h4>
+    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+  </a>
+</div>
+
+
+<h2>패널</h2>
+<div class="panel panel-default">
+  <div class="panel-body">
+    Basic panel example
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Panel heading without title</div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    Panel content
+  </div>
+  <div class="panel-footer">Panel footer</div>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">Panel heading without title</div>
+  <div class="panel-body">
+    Panel content
+  </div>
+  <div class="panel-footer">Panel footer</div>
+</div>
+<div class="panel panel-success">
+  <div class="panel-heading">Panel heading without title</div>
+  <div class="panel-body">
+    Panel content
+  </div>
+  <div class="panel-footer">Panel footer</div>
+</div>
+<div class="panel panel-info">
+  <div class="panel-heading">Panel heading without title</div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+<div class="panel panel-warning">
+  <div class="panel-heading">Panel heading without title</div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+<div class="panel panel-danger">
+  <div class="panel-heading">Panel heading without title</div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+<nav id="navbar-example" class="navbar navbar-default navbar-static" role="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#fat">@fat</a></li>
+        <li class=""><a href="#mdo">@mdo</a></li>
+        <li class="dropdown">
+          <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="navbarDrop1">
+            <li class=""><a href="#one" tabindex="-1">one</a></li>
+            <li class=""><a href="#two" tabindex="-1">two</a></li>
+            <li class="divider"></li>
+            <li class=""><a href="#three" tabindex="-1">three</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div data-spy="scroll" data-target="#navbar-example" data-offset="0" class="scrollspy-example">
+  <h4 id="fat">@fat</h4>
+  <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+  <h4 id="mdo">@mdo</h4>
+  <p>Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.</p>
+  <h4 id="one">one</h4>
+  <p>Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.</p>
+  <h4 id="two">two</h4>
+  <p>In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.</p>
+  <h4 id="three">three</h4>
+  <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+  <p>Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
+  </p>
+</div>
+<div class="panel panel-danger">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Panel heading</div>
+  <div class="panel-body">
+    <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+  </div>
+
+  <!-- Table -->
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Username</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="panel panel-danger">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Panel heading</div>
+  <!-- Table -->
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Username</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Panel heading</div>
+  <div class="panel-body">
+    <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+  </div>
+
+  <!-- List group -->
+  <ul class="list-group">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Morbi leo risus</li>
+    <li class="list-group-item">Porta ac consectetur ac</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+</div>
+
+<h2>반응형 임베드</h2>
+
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/E_c1ouE2X5E" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<!-- <div class="embed-responsive embed-responsive-16by9">
+  <video autoplay loop class="embed-responsive-item">
+    <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
+  </video>
+</div> -->
+
+<h2>웰</h2>
+<div class="well">
+  Look, I'm in a well!
+</div>
+
+<div class="well well-lg">
+  Look, I'm in a large well!
+</div>
+<div class="well well-sm">
+  Look, I'm in a small well!
+</div>
+
+  <a href="#">Scroll to Top</a>
+
+
+
+      <footer style="margin-top:350px;">
+        <p>&copy; Company 2014-2015</p>
+        <a href="#header" class="scrollup btn btn-primary"><i class="fa fa-chevron-up"></i></a>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/holder.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
